@@ -1,6 +1,7 @@
 package testScripts;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,11 +26,14 @@ public class GooglePageTest {
 	  
 	  WebElement name = driver.findElement(By.id ("username"));
 	  name.sendKeys("tomsmith");
+	  name.clear();
 	  WebElement pwd = driver.findElement(By.name ("password"));
 	  pwd.sendKeys("SuperSecretPassword!");
+	  pwd.sendKeys(Keys.ENTER);
 	  //WebElement btnLogin = driver.findElement(By.tagName("button"));
 	  
 	  WebElement btnLogin = driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']"));
 //      btnLogin.click();
+	  //btnLogin.submit();
   }
 }
