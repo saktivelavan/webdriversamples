@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.WinPopupTest">
+      <class name="testScripts.ExpWaitTest">
         <methods>
-          <include name="winPop"/>
+          <include name="explicitWaitTest"/>
         </methods>
-      </class> <!-- testScripts.WinPopupTest -->
+      </class> <!-- testScripts.ExpWaitTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

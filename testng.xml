@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="SampleSuite">
+  <test thread-count="5" name="SampleTest">
+    <classes>
+      <class name="testScripts.DropDownTest"/>
+      <class name="testScripts.FluentWaitTest"/>
+      <class name="testScripts.RadioChkBoxTest"/>
+      <class name="testScripts.ShadowDOMTest"/>
+      <class name="testScripts.ToolTipTest"/>
+      <class name="testScripts.WebtabletestTest"/>
+      <class name="testScripts.DisplayTestTest"/>
+      <class name="testScripts.WinPopupTest"/>
+      <class name="testScripts.RadioButtonTest"/>
+      <class name="testScripts.GooglePageTest"/>
+      <class name="testScripts.JavaScriptExecTest"/>
+      <class name="testScripts.ProductsSelection"/>
+      <class name="testScripts.PageLoadTest"/>
+      <class name="testScripts.DownloadFileTest"/>
+      <class name="testScripts.UploadFileTest"/>
+      <class name="testScripts.AlertsTest"/>
+      <class name="testScripts.ExpWaitTest"/>
+      <class name="testScripts.AutoCompleteTest"/>
+      <class name="testScripts.MouseActionsTest"/>
+    </classes>
+  </test> <!-- SampleTest -->
+</suite> <!-- SampleSuite -->
