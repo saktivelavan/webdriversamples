@@ -2,6 +2,7 @@ package parallelScripts;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 public class SampleTwoTest {
@@ -10,7 +11,7 @@ public class SampleTwoTest {
   //@Test(groups = "featureOne")
 	@Test
   public void testOne() {
-	  driver = new ChromeDriver();
+	  driver = new EdgeDriver();
 	  long id = Thread.currentThread().getId();
 	  System.out.println("test21 in SampleTwo.."+id);
   }
@@ -18,7 +19,7 @@ public class SampleTwoTest {
  // @Test(groups = "featureTwo")
 	@Test
   public void testTwo() {
-		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 		  long id = Thread.currentThread().getId();
 	  System.out.println("test22 in SampleTwo.."+id);
   }
@@ -27,7 +28,7 @@ public class SampleTwoTest {
  // @Test(groups = "featureThree")
 	@Test
   public void testThree() {
-		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 		  long id = Thread.currentThread().getId();
 	  System.out.println("test23 in SampleTwo.."+id);
   }
@@ -35,7 +36,7 @@ public class SampleTwoTest {
 //  @Test(groups = "featureFour")
 	@Test
   public void testFour() {
-		driver = new ChromeDriver();
+		driver = new EdgeDriver();
 		  long id = Thread.currentThread().getId();
 	  System.out.println("test24 in SampleTwo.."+id);
   }

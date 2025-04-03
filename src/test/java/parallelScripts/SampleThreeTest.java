@@ -10,7 +10,7 @@ public class SampleThreeTest {
   //@Test(groups = "featureOne")
 	@Test
   public void testOne() {
-	  driver = new ChromeDriver();
+//	  driver = new ChromeDriver();
 	  long id = Thread.currentThread().getId();
 	  System.out.println("test31 in SampleThree.."+id);
   }
@@ -18,7 +18,7 @@ public class SampleThreeTest {
  // @Test(groups = "featureTwo")
 	@Test
   public void testTwo() {
-		driver = new ChromeDriver();
+//		driver = new ChromeDriver();
 		  long id = Thread.currentThread().getId();
 	  System.out.println("test32 in SampleThree.."+id);
   }
@@ -27,15 +27,15 @@ public class SampleThreeTest {
  // @Test(groups = "featureThree")
 	@Test
   public void testThree() {
-		driver = new ChromeDriver();
+//		driver = new ChromeDriver();
 		  long id = Thread.currentThread().getId();
 	  System.out.println("test33 in SampleThree.."+id);
   }
   
 //  @Test(groups = "featureFour")
-	@Test
+	@Test(invocationCount=6, threadPoolSize=3, timeOut=10000)
   public void testFour() {
-		driver = new ChromeDriver();
+//		driver = new ChromeDriver();
 		  long id = Thread.currentThread().getId();
 	  System.out.println("test34 in SampleThree.."+id);
   }
