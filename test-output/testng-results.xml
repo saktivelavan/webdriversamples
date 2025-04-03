@@ -1,241 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="19" passed="17" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-01T17:07:12 IST" name="SampleSuite" finished-at="2025-04-01T17:11:00 IST" duration-ms="227579">
+  <suite started-at="2025-04-03T14:27:24 IST" name="SampleSuite" finished-at="2025-04-03T14:27:29 IST" duration-ms="4793">
     <groups>
     </groups>
-    <test started-at="2025-04-01T17:07:12 IST" name="SampleTest" finished-at="2025-04-01T17:11:00 IST" duration-ms="227579">
-      <class name="testScripts.ProductsSelection">
-        <test-method signature="dynamicElementSelection()[pri:0, instance:testScripts.ProductsSelection@2af004b]" started-at="2025-04-01T17:09:30 IST" name="dynamicElementSelection" finished-at="2025-04-01T17:09:47 IST" duration-ms="16380" status="PASS">
+    <test started-at="2025-04-03T14:27:24 IST" name="ModuleOneTest" finished-at="2025-04-03T14:27:29 IST" duration-ms="4793">
+      <class name="parallelScripts.SampleOneTest">
+        <test-method signature="testFour()[pri:0, instance:parallelScripts.SampleOneTest@71ba6d4e]" started-at="2025-04-03T14:27:24 IST" name="testFour" finished-at="2025-04-03T14:27:28 IST" duration-ms="4091" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dynamicElementSelection -->
-      </class> <!-- testScripts.ProductsSelection -->
-      <class name="testScripts.ExpWaitTest">
-        <test-method signature="explicitWaitTest()[pri:0, instance:testScripts.ExpWaitTest@563f38c4]" started-at="2025-04-01T17:10:22 IST" name="explicitWaitTest" finished-at="2025-04-01T17:10:42 IST" duration-ms="19968" status="PASS">
+        </test-method> <!-- testFour -->
+        <test-method signature="testOne()[pri:0, instance:parallelScripts.SampleOneTest@71ba6d4e]" started-at="2025-04-03T14:27:24 IST" name="testOne" finished-at="2025-04-03T14:27:29 IST" duration-ms="4681" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- explicitWaitTest -->
-      </class> <!-- testScripts.ExpWaitTest -->
-      <class name="testScripts.JavaScriptExecTest">
-        <test-method signature="voidTest()[pri:0, instance:testScripts.JavaScriptExecTest@27406a17]" started-at="2025-04-01T17:09:24 IST" name="voidTest" finished-at="2025-04-01T17:09:30 IST" duration-ms="6329" status="PASS">
+        </test-method> <!-- testOne -->
+        <test-method signature="testTwo()[pri:0, instance:parallelScripts.SampleOneTest@71ba6d4e]" started-at="2025-04-03T14:27:24 IST" name="testTwo" finished-at="2025-04-03T14:27:29 IST" duration-ms="4489" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- voidTest -->
-      </class> <!-- testScripts.JavaScriptExecTest -->
-      <class name="testScripts.GooglePageTest">
-        <test-method signature="seleniumSearch()[pri:0, instance:testScripts.GooglePageTest@76b1e9b8]" started-at="2025-04-01T17:09:15 IST" name="seleniumSearch" finished-at="2025-04-01T17:09:24 IST" duration-ms="8924" status="PASS">
+        </test-method> <!-- testTwo -->
+        <test-method signature="testThree()[pri:0, instance:parallelScripts.SampleOneTest@71ba6d4e]" started-at="2025-04-03T14:27:24 IST" name="testThree" finished-at="2025-04-03T14:27:28 IST" duration-ms="4139" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seleniumSearch -->
-      </class> <!-- testScripts.GooglePageTest -->
-      <class name="testScripts.AlertsTest">
-        <test-method signature="variousAlerts()[pri:0, instance:testScripts.AlertsTest@3e8c3cb]" started-at="2025-04-01T17:10:10 IST" name="variousAlerts" finished-at="2025-04-01T17:10:22 IST" duration-ms="12190" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [I am an alert box] but found [I am an alert box!],
-expected [Press a buttonk] but found [Press a button!]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [I am an alert box] but found [I am an alert box!],
-expected [Press a buttonk] but found [Press a button!]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at testScripts.AlertsTest.variousAlerts(AlertsTest.java:64)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- variousAlerts -->
-      </class> <!-- testScripts.AlertsTest -->
-      <class name="testScripts.UploadFileTest">
-        <test-method signature="uploadFile()[pri:0, instance:testScripts.UploadFileTest@793f29ff]" started-at="2025-04-01T17:10:07 IST" name="uploadFile" finished-at="2025-04-01T17:10:10 IST" duration-ms="3373" status="FAIL">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression (//span[text()='Start upload'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//span[text()='Start upload']' is not a valid XPath expression.
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e7569e863d0b9140e4a1f562b2b5368, findElement {using=xpath, value=(//span[text()='Start upload']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50921/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e7569e863d0b9140e4a1f562b2b5368]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//span[text()='Start upload'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//span[text()='Start upload']' is not a valid XPath expression.
-  (Session info: chrome=134.0.6998.178)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8e7569e863d0b9140e4a1f562b2b5368, findElement {using=xpath, value=(//span[text()='Start upload']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50921}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50921/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8e7569e863d0b9140e4a1f562b2b5368
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at testScripts.UploadFileTest.uploadFile(UploadFileTest.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadFile -->
-      </class> <!-- testScripts.UploadFileTest -->
-      <class name="testScripts.AutoCompleteTest">
-        <test-method signature="autoComplteTest()[pri:0, instance:testScripts.AutoCompleteTest@543295b0]" started-at="2025-04-01T17:10:42 IST" name="autoComplteTest" finished-at="2025-04-01T17:10:46 IST" duration-ms="3940" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- autoComplteTest -->
-      </class> <!-- testScripts.AutoCompleteTest -->
-      <class name="testScripts.RadioButtonTest">
-        <test-method signature="selectRadioTest()[pri:0, instance:testScripts.RadioButtonTest@17f62e33]" started-at="2025-04-01T17:09:08 IST" name="selectRadioTest" finished-at="2025-04-01T17:09:15 IST" duration-ms="7072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectRadioTest -->
-      </class> <!-- testScripts.RadioButtonTest -->
-      <class name="testScripts.MouseActionsTest">
-        <test-method signature="mouseActions()[pri:0, instance:testScripts.MouseActionsTest@54422e18]" started-at="2025-04-01T17:10:46 IST" name="mouseActions" finished-at="2025-04-01T17:11:00 IST" duration-ms="13663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mouseActions -->
-      </class> <!-- testScripts.MouseActionsTest -->
-      <class name="testScripts.WebtabletestTest">
-        <test-method signature="dynamicWebTable()[pri:0, instance:testScripts.WebtabletestTest@173ed316]" started-at="2025-04-01T17:07:53 IST" name="dynamicWebTable" finished-at="2025-04-01T17:08:00 IST" duration-ms="6575" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dynamicWebTable -->
-      </class> <!-- testScripts.WebtabletestTest -->
-      <class name="testScripts.FluentWaitTest">
-        <test-method signature="fluentWaitTest()[pri:0, instance:testScripts.FluentWaitTest@470734c3]" started-at="2025-04-01T17:07:18 IST" name="fluentWaitTest" finished-at="2025-04-01T17:07:41 IST" duration-ms="23156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fluentWaitTest -->
-      </class> <!-- testScripts.FluentWaitTest -->
-      <class name="testScripts.DropDownTest">
-        <test-method signature="selectDrpDownTest()[pri:0, instance:testScripts.DropDownTest@6d4d66d2]" started-at="2025-04-01T17:07:12 IST" name="selectDrpDownTest" finished-at="2025-04-01T17:07:18 IST" duration-ms="6023" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectDrpDownTest -->
-      </class> <!-- testScripts.DropDownTest -->
-      <class name="testScripts.ShadowDOMTest">
-        <test-method signature="shadowDOMTest()[pri:0, instance:testScripts.ShadowDOMTest@7674f035]" started-at="2025-04-01T17:07:48 IST" name="shadowDOMTest" finished-at="2025-04-01T17:07:50 IST" duration-ms="1955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shadowDOMTest -->
-      </class> <!-- testScripts.ShadowDOMTest -->
-      <class name="testScripts.PageLoadTest">
-        <test-method signature="pageLoadTest()[pri:0, instance:testScripts.PageLoadTest@248e319b]" started-at="2025-04-01T17:09:47 IST" name="pageLoadTest" finished-at="2025-04-01T17:09:57 IST" duration-ms="10259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageLoadTest -->
-      </class> <!-- testScripts.PageLoadTest -->
-      <class name="testScripts.DownloadFileTest">
-        <test-method signature="fileDownload()[pri:0, instance:testScripts.DownloadFileTest@5d0bf09b]" started-at="2025-04-01T17:09:57 IST" name="fileDownload" finished-at="2025-04-01T17:10:07 IST" duration-ms="9617" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fileDownload -->
-      </class> <!-- testScripts.DownloadFileTest -->
-      <class name="testScripts.ToolTipTest">
-        <test-method signature="tooltip()[pri:0, instance:testScripts.ToolTipTest@69e153c5]" started-at="2025-04-01T17:07:50 IST" name="tooltip" finished-at="2025-04-01T17:07:53 IST" duration-ms="3530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tooltip -->
-      </class> <!-- testScripts.ToolTipTest -->
-      <class name="testScripts.RadioChkBoxTest">
-        <test-method signature="selectRadioTest()[pri:0, instance:testScripts.RadioChkBoxTest@2cf3d63b]" started-at="2025-04-01T17:07:41 IST" name="selectRadioTest" finished-at="2025-04-01T17:07:48 IST" duration-ms="6187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectRadioTest -->
-      </class> <!-- testScripts.RadioChkBoxTest -->
-      <class name="testScripts.WinPopupTest">
-        <test-method signature="winPop()[pri:0, instance:testScripts.WinPopupTest@74ea2410]" started-at="2025-04-01T17:08:12 IST" name="winPop" finished-at="2025-04-01T17:09:08 IST" duration-ms="56335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- winPop -->
-      </class> <!-- testScripts.WinPopupTest -->
-      <class name="testScripts.DisplayTestTest">
-        <test-method signature="displayElementTest()[pri:0, instance:testScripts.DisplayTestTest@25ce9dc4]" started-at="2025-04-01T17:08:00 IST" name="displayElementTest" finished-at="2025-04-01T17:08:12 IST" duration-ms="11971" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- displayElementTest -->
-      </class> <!-- testScripts.DisplayTestTest -->
-    </test> <!-- SampleTest -->
+        </test-method> <!-- testThree -->
+      </class> <!-- parallelScripts.SampleOneTest -->
+    </test> <!-- ModuleOneTest -->
   </suite> <!-- SampleSuite -->
 </testng-results>

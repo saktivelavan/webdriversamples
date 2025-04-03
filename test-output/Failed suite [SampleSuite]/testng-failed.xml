@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SampleSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="SampleTest(failed)">
-    <parameter name="browser" value="edge"/>
+<suite name="Failed suite [Failed suite [SampleSuite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SampleTest(failed)(failed)">
     <classes>
       <class name="testScripts.BookSearchText">
         <methods>
-          <include name="afterMethod"/>
           <include name="novelSearch"/>
           <include name="setup"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- testScripts.BookSearchText -->
     </classes>
-  </test> <!-- SampleTest(failed) -->
-</suite> <!-- Failed suite [SampleSuite] -->
+  </test> <!-- SampleTest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [SampleSuite]] -->
